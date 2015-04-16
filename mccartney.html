@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bark Park | McCartney</title>
+    <title>Bark Park | Home</title>
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/app.css" />
@@ -17,11 +17,9 @@
 <div class="mobnav show-for-small small-12 columns">
     	<ul class="bar">
         	<li class="left small-1 columns"><i class="fi-home"></i></li>
-            <li class="small-6 small-offset-2 columns"><input type="text"></li>
+            <li class="small-6 small-offset-2 columns"><input id='search' type="text"></li>
             
             <li id="men" class="right small-2 columns end"><i class="fi-list"></i>
-                
-               	
                     
             </li>
         </ul>
@@ -42,6 +40,10 @@
             <li>Contact</li>
         </ul>
     </div>
+<div id='sresults'>
+    
+</div>
+
 
 	<div class="hide-for-small large-12 columns prehead">
     	<h1>Bark Park</h1>
@@ -74,80 +76,39 @@
     </div>
   </div>
 
+<div id="webinfo">
+<div class="about large-10 medium-10 small-12 column  right">
+    <h1>McCartney Creek Park</h1>
+    <div class="small-6 columns">
+        <h2 class="subheader">Larkhall Crescent</h2>
+    </div>
+    <div class="small-4 columns right">
+        <i class="fi-paw"></i>
+        <i class="fi-paw"></i>
+        <i class="fi-paw"></i>
+        <i class="grey fi-paw"></i>
+        <i class="grey fi-paw"></i><br>
+        <p class="ilabel">4/5 paws</p>
+    </div>
+</div>
 
+<div class=" small-12 columns">
+    <div class='half'><img src="img/mccartney-thumb.jpg"></div>
+    <div class='half'><iframe frameborder='0' src="mc-map.html"></iframe></div>  
 
+</div>
+ 
+<div class="amenities small-12 columns">
 
-<div class="map-area large-7 medium-7 small-6 columns">
+    <h1>Amenities:</h1>
+    
+</div>
+
 	
-  <iframe width="100%" height="300px" frameborder='0' src="map.html"></iframe>  
 
-
-
-</div>
-
-
-
-
-<div class="mobaccord show-for-small left small-12">
-<ul class="accordion" data-accordion role="tablist"> 
-	<li class="accordion-navigation"> 
-            <a href="#panel1d" role="tab" id="panel1d-heading" aria-controls="panel1d">
-                <i class="collapsing fi-plus"></i> North Vancouver</a> 
-        <div id="panel1d" class="content" role="tabpanel" aria-labelledby="panel1d-heading"> 
-          <div style="background-color:#1cc7ff;" class="row">
-            <div class=" thumb small-6 columns">
-            	<img src="img/mccartney-thumb.jpg">
-            </div>
-            
-            <div class="thumbinfo small-6 left columns">
-            	<h5>McCartney Creek Park</h5>
-                <h6 class="subheader">Larkhall Crescent</h6>
-                <i class="fi-paw"></i>
-                <i class="fi-paw"></i>
-                <i class="fi-paw"></i>
-                <i class="grey fi-paw"></i>
-                <i class="grey fi-paw"></i><br>
-                <p class="ilabel">4/5 paws</p>
-            </div>
-          </div>
-            
-          <div class="row">
-            <div class=" thumb small-5 columns">
-            	<img src="img/mc-thumb.png">
-            </div>
-            
-            <div class="small-7 left columns">
-            	<h5>Harbourview</h5>
-                <h6 class="subheader">Larkhall Crescent</h6>
-                <i class="fi-paw"></i>
-                <i class="fi-paw"></i>
-                <i class="fi-paw"></i>
-                <i class="grey fi-paw"></i>
-                <i class="grey fi-paw"></i>
-            </div>
-          </div> 
-          
-          
-            
-        </div> 
-    </li> 
-    <li class="accordion-navigation"> 
-    	<a href="#panel2d" role="tab" id="panel2d-heading" aria-controls="panel2d">Burnaby</a> 
-        <div id="panel2d" class="content" role="tabpanel" aria-labelledby="panel2d-heading">
-        	 Panel 2. Lorem ipsum dolor 
-        </div> 
-    </li> 
-    <li class="accordion-navigation"> 
-    	<a href="#panel3d" role="tab" id="panel3d-heading" aria-controls="panel3d">Vancouver</a> 
-    	<div id="panel3d" class="content" role="tabpanel" aria-labelledby="panel3d-heading"> 
-    		Panel 3. Lorem ipsum dolor 
-        </div> 
-     </li> 
- </ul>
+<div class='small-12 columns'>
 
 </div>
-
-
 
 <div class=" homeimage column large-12 medium-12">
 
@@ -158,6 +119,8 @@
 <p>footer</p>
 
 </div>
+</div>
+
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

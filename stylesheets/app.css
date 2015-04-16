@@ -9229,6 +9229,29 @@ body p, li {
 
 @media only screen and (max-width: 40em) {
   /* line 85, ../scss/app.scss */
+  h1 {
+    font-size: 18pt;
+  }
+
+  /* line 88, ../scss/app.scss */
+  h2 {
+    font-size: 16pt;
+  }
+
+  /* line 92, ../scss/app.scss */
+  .half {
+    width: 50vw;
+    margin: 0;
+    float: left;
+    padding: 2%;
+  }
+
+  /* line 99, ../scss/app.scss */
+  .half img {
+    min-width: 100%;
+  }
+
+  /* line 102, ../scss/app.scss */
   #mendrop {
     position: absolute;
     top: 78px;
@@ -9238,7 +9261,7 @@ body p, li {
     display: none;
   }
 
-  /* line 93, ../scss/app.scss */
+  /* line 110, ../scss/app.scss */
   #sresults {
     position: absolute;
     top: 78px;
@@ -9249,87 +9272,87 @@ body p, li {
     display: none;
   }
 
-  /* line 103, ../scss/app.scss */
+  /* line 120, ../scss/app.scss */
   .citylist > li {
     margin: 0;
     font-weight: bold;
     list-style-type: none;
   }
 
-  /* line 111, ../scss/app.scss */
+  /* line 128, ../scss/app.scss */
   .parklist {
     list-style-type: none;
   }
 
-  /* line 117, ../scss/app.scss */
+  /* line 134, ../scss/app.scss */
   .about p {
     font-size: 10pt;
   }
 
-  /* line 124, ../scss/app.scss */
+  /* line 141, ../scss/app.scss */
   .mobaccord {
     font-weight: bold;
     font-size: 16pt;
     padding: 4% 0;
   }
 
-  /* line 130, ../scss/app.scss */
+  /* line 147, ../scss/app.scss */
   .mobaccord ul {
     margin: 0;
     padding: 0;
   }
 
-  /* line 136, ../scss/app.scss */
+  /* line 153, ../scss/app.scss */
   .mobaccord li {
     margin: 4% 0;
     font-family: "Josefin Sans", sans-serif;
   }
 
-  /* line 143, ../scss/app.scss */
+  /* line 160, ../scss/app.scss */
   .collapsing {
     color: #ffffff;
     font-size: 18pt;
     padding: 1%;
   }
 
-  /* line 148, ../scss/app.scss */
+  /* line 165, ../scss/app.scss */
   .mobaccord li a {
     background-color: #000000;
     font-size: 10pt;
     font-family: 'Josefin Sans', sans-serif;
   }
 
-  /* line 155, ../scss/app.scss */
+  /* line 172, ../scss/app.scss */
   .thumb {
     padding: 2%;
   }
 
-  /* line 159, ../scss/app.scss */
+  /* line 176, ../scss/app.scss */
   .thumb img {
     width: 80%;
     margin-left: 4%;
     margin-top: 4%;
   }
 
-  /* line 166, ../scss/app.scss */
+  /* line 183, ../scss/app.scss */
   .grey {
     color: #737373;
   }
 
-  /* line 169, ../scss/app.scss */
+  /* line 186, ../scss/app.scss */
   .ilabel {
     background-color: #ffffff;
     color: #CCCCCC;
     font-size: 12pt;
   }
 
-  /* line 174, ../scss/app.scss */
+  /* line 191, ../scss/app.scss */
   .thumbinfo {
     margin: 4% 0;
     line-height: 2px;
   }
 }
-/* line 185, ../scss/app.scss */
+/* line 202, ../scss/app.scss */
 .prehead {
   height: 10%;
   display: inline-block;
@@ -9337,23 +9360,23 @@ body p, li {
   padding: 1%;
 }
 
-/* line 195, ../scss/app.scss */
+/* line 212, ../scss/app.scss */
 .about {
   display: block;
   padding: 4%;
 }
 
-/* line 201, ../scss/app.scss */
+/* line 218, ../scss/app.scss */
 .map {
   padding: 0 2%;
 }
 
-/* line 206, ../scss/app.scss */
+/* line 223, ../scss/app.scss */
 .map img {
   margin: 0 4%;
 }
 
-/* line 209, ../scss/app.scss */
+/* line 226, ../scss/app.scss */
 .head {
   height: 30%;
   background: url(../img/contactheader.jpg) no-repeat center;
@@ -9364,14 +9387,14 @@ body p, li {
   position: relative;
 }
 
-/* line 219, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 .bottomhead {
   position: absolute;
   display: inline-block;
   top: 80%;
 }
 
-/* line 225, ../scss/app.scss */
+/* line 242, ../scss/app.scss */
 #searchbar {
   clear: none;
   width: 100%;
@@ -9379,19 +9402,19 @@ body p, li {
   box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 231, ../scss/app.scss */
+/* line 248, ../scss/app.scss */
 .side {
   height: 30%;
   display: block;
   margin: 0%;
 }
 
-/* line 239, ../scss/app.scss */
+/* line 256, ../scss/app.scss */
 .snav {
   margin: 4% 0;
 }
 
-/* line 244, ../scss/app.scss */
+/* line 261, ../scss/app.scss */
 .snav li {
   list-style: none;
   display: block;
@@ -9401,7 +9424,7 @@ body p, li {
   margin-top: 10%;
 }
 
-/* line 253, ../scss/app.scss */
+/* line 270, ../scss/app.scss */
 .homeimage {
   float: left;
   height: 30%;
@@ -9413,7 +9436,7 @@ body p, li {
   position: relative;
 }
 
-/* line 264, ../scss/app.scss */
+/* line 281, ../scss/app.scss */
 .footer {
   display: block;
   max-height: 200px;

@@ -81,7 +81,24 @@ body p, li{
 }
 
 @media only screen and (max-width: 40em) { 
+    
+    h1 {
+        font-size:18pt;
+    }
+    h2{
+        font-size:16pt;
         
+    }
+    .half {
+        
+        width:50vw;
+        margin:0;
+        float:left;
+        padding:2%;
+    }
+    .half img{
+        min-width:100%;
+    }
     #mendrop {
        position:absolute; 
        top:78px;

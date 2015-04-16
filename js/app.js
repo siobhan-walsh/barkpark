@@ -10,11 +10,13 @@ $(document).ready(
 		var clicked = false;
                
             //for the search funtion
-                $("#search").keydown(function(e){
+                $("#search").keypress(function(e){
+                    
+                    var term = $("#search").val();
                     
                     console.log("ITS PRESSED");
                     
-                    if(e.keyCode == 77){
+                    if(term.startsWith('m')){
                         
                         $("#webinfo").css("opacity", "0.4");
                         $("#sresults").show().html(
@@ -34,10 +36,43 @@ $(document).ready(
                        );
                         
                         console.log("ITS AN MM");
+                    } else if(term.startsWith('s')){
+                        
+                        $("#webinfo").css("opacity", "0.4");
+                        $("#sresults").show().html(
+                            '<div class=" thumb small-6 columns">'+
+                                '<img src="img/seylynn-thumb.jpg">'+
+                            '</div>'+
+                            '<div class="thumbinfo small-6 left columns">'+
+                                '<h5>Seylynn Park</h5>'+
+                                '<h6 class="subheader">Mountain Highway</h6>'+
+                                '<i class="fi-paw"></i>'+
+                                '<i class="fi-paw"></i>'+
+                                '<i class="fi-paw"></i>'+
+                                '<i class="fi-paw"></i>'+
+                                '<i class="grey fi-paw"></i><br>'+
+                                '<p class="ilabel">4/5 paws</p>'+
+                            '</div>'+
+                            '<div class=" thumb small-6 columns">'+
+                                '<img src="img/stanley-thumb.jpg">'+
+                            '</div>'+
+                            '<div class="thumbinfo small-6 left columns">'+
+                                '<h5>Stanley Park</h5>'+
+                                '<h6 class="subheader">Lagoon Drive</h6>'+
+                                '<i class="fi-paw"></i>'+
+                                '<i class="fi-paw"></i>'+
+                                '<i class="grey fi-paw"></i>'+
+                                '<i class="grey fi-paw"></i>'+
+                                '<i class="grey fi-paw"></i><br>'+
+                                '<p class="ilabel">2/5 paws</p>'+
+                            '</div>'
+                       );
+                        
+                        console.log("ITS AN MM");
                     } else {
                         console.log("THAT AIN'T NO M");
                         $("#webinfo").css("opacity", "0.4");
-                        $("#sresults").show().html('Sorry, there are no results');
+                        
                     }
                     
                 }

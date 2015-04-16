@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>McCartney Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <base target="_parent" />
+    <style>
+      html, body, #map-canvas2 {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+        
+        infoWindow = new google.maps.InfoWindow;
+        var map;
+        var marker;
+        var clicked = false;
+        google.maps.event.addDomListener(window, 'load', initialize);
+        
+    function initialize() {
+            
+          var mapOptions = {
+            zoom: 14,
+            center: new google.maps.LatLng(49.319704, -122.992096)
+          };
+          map = new google.maps.Map(document.getElementById('map-canvas2'),
+              mapOptions);
+          
+        
+        var mccartney =  "<div class='row'>"+
+                "<div class='thumb small-6 columns'>"+
+            
+            	"<img src='img/mccartney-thumb.jpg'>"+
+           "</div>"+    
+            "<div class='thumbinfo small-6 left columns'>"+
+            	"<h5>McCartney Creek Park</h5>"+
+               " <h6 class='subheader'>Larkhall Crescent</h6>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<p class='ilabel'>4/5 paws</p>"+
+            "</div>"+
+         " </div>"
+               
+        var seylynn = "seylnn"
+        var harbourview = "harbourview"
+        var kingsmill = "kingsmill"
+        console.log(navigator);
+        
+        
+        
+
+        var coords = [
+            
+        [49.319704, -122.992096, mccartney],
+        [49.311335, -123.034095, seylynn],
+        [49.305414, -123.038095, harbourview],
+        [49.313413, -123.098523, kingsmill]
+        // and additional coordinates, just add a new item
+        ];
+        
+        // iterate over your coords array
+    for (var i = 0; i < coords.length; i++) {
+        // create a closure for your latitude/longitude pair
+        (function(coord) {
+            // set the location...
+            var latLng = new google.maps.LatLng(coord[0], coord[1]);
+            // ...and add the Marker to your map
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                icon: 'img/paw.png'
+             });    
+            
+        marker.infoWindow = new google.maps.InfoWindow({
+                content: coord[2]
+            });
+            
+          
+        
+          google.maps.event.addListener(marker, 'click', function() {
+              
+                    marker.infoWindow.open(map, marker);
+                    
+           });   
+           
+       google.maps.event.addListener(map, 'click', function() {
+              
+                   marker.infowindow.close(); 
+           });   
+           
+            
+        })(coords[i]);
+           
+      
+    }
+}
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas2"></div>
+  </body>
+</html>
+
