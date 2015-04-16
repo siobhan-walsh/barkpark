@@ -20,7 +20,7 @@ $(document).ready(
                         
                         $("#webinfo").css("opacity", "0.4");
                         $("#sresults").show().html(
-                            '<div class=" thumb small-6 columns">'+
+                            '<a href="mccartney.html"><div class=" thumb small-6 columns">'+
                                 '<img src="img/mccartney-thumb.jpg">'+
                             '</div>'+
                             '<div class="thumbinfo small-6 left columns">'+
@@ -32,7 +32,7 @@ $(document).ready(
                                 '<i class="grey fi-paw"></i>'+
                                 '<i class="grey fi-paw"></i><br>'+
                                 '<p class="ilabel">4/5 paws</p>'+
-                            '</div>'
+                            '</div></a>'
                        );
                         
                         console.log("ITS AN MM");

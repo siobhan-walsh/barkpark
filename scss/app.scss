@@ -85,10 +85,10 @@ body p, li{
     h1 {
         font-size:18pt;
     }
-    h2{
-        font-size:16pt;
-        
+    h2 {
+        font-size:16pt; 
     }
+   
     .half {
         
         width:50vw;
@@ -99,6 +99,36 @@ body p, li{
     .half img{
         min-width:100%;
     }
+    
+    .amen {
+        width:30vw;
+        margin:0;
+        float:left;
+        padding:2%;
+         
+    }
+    .iconsp {
+        width:70vw;
+        margin:0;
+        float:left;
+        
+    }
+    .iconsp p{
+        font-size:8pt;
+        
+    }
+    .gallery {
+        
+        width:100%;
+        background-color:#ffccee;
+    }
+    .gallery img{
+        
+        width:100%;
+        
+        
+    }
+    
     #mendrop {
        position:absolute; 
        top:78px;

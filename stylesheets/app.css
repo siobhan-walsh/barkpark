@@ -9251,7 +9251,38 @@ body p, li {
     min-width: 100%;
   }
 
-  /* line 102, ../scss/app.scss */
+  /* line 103, ../scss/app.scss */
+  .amen {
+    width: 30vw;
+    margin: 0;
+    float: left;
+    padding: 2%;
+  }
+
+  /* line 110, ../scss/app.scss */
+  .iconsp {
+    width: 70vw;
+    margin: 0;
+    float: left;
+  }
+
+  /* line 116, ../scss/app.scss */
+  .iconsp p {
+    font-size: 8pt;
+  }
+
+  /* line 120, ../scss/app.scss */
+  .gallery {
+    width: 100%;
+    background-color: #ffccee;
+  }
+
+  /* line 125, ../scss/app.scss */
+  .gallery img {
+    width: 100%;
+  }
+
+  /* line 132, ../scss/app.scss */
   #mendrop {
     position: absolute;
     top: 78px;
@@ -9261,7 +9292,7 @@ body p, li {
     display: none;
   }
 
-  /* line 110, ../scss/app.scss */
+  /* line 140, ../scss/app.scss */
   #sresults {
     position: absolute;
     top: 78px;
@@ -9272,87 +9303,87 @@ body p, li {
     display: none;
   }
 
-  /* line 120, ../scss/app.scss */
+  /* line 150, ../scss/app.scss */
   .citylist > li {
     margin: 0;
     font-weight: bold;
     list-style-type: none;
   }
 
-  /* line 128, ../scss/app.scss */
+  /* line 158, ../scss/app.scss */
   .parklist {
     list-style-type: none;
   }
 
-  /* line 134, ../scss/app.scss */
+  /* line 164, ../scss/app.scss */
   .about p {
     font-size: 10pt;
   }
 
-  /* line 141, ../scss/app.scss */
+  /* line 171, ../scss/app.scss */
   .mobaccord {
     font-weight: bold;
     font-size: 16pt;
     padding: 4% 0;
   }
 
-  /* line 147, ../scss/app.scss */
+  /* line 177, ../scss/app.scss */
   .mobaccord ul {
     margin: 0;
     padding: 0;
   }
 
-  /* line 153, ../scss/app.scss */
+  /* line 183, ../scss/app.scss */
   .mobaccord li {
     margin: 4% 0;
     font-family: "Josefin Sans", sans-serif;
   }
 
-  /* line 160, ../scss/app.scss */
+  /* line 190, ../scss/app.scss */
   .collapsing {
     color: #ffffff;
     font-size: 18pt;
     padding: 1%;
   }
 
-  /* line 165, ../scss/app.scss */
+  /* line 195, ../scss/app.scss */
   .mobaccord li a {
     background-color: #000000;
     font-size: 10pt;
     font-family: 'Josefin Sans', sans-serif;
   }
 
-  /* line 172, ../scss/app.scss */
+  /* line 202, ../scss/app.scss */
   .thumb {
     padding: 2%;
   }
 
-  /* line 176, ../scss/app.scss */
+  /* line 206, ../scss/app.scss */
   .thumb img {
     width: 80%;
     margin-left: 4%;
     margin-top: 4%;
   }
 
-  /* line 183, ../scss/app.scss */
+  /* line 213, ../scss/app.scss */
   .grey {
     color: #737373;
   }
 
-  /* line 186, ../scss/app.scss */
+  /* line 216, ../scss/app.scss */
   .ilabel {
     background-color: #ffffff;
     color: #CCCCCC;
     font-size: 12pt;
   }
 
-  /* line 191, ../scss/app.scss */
+  /* line 221, ../scss/app.scss */
   .thumbinfo {
     margin: 4% 0;
     line-height: 2px;
   }
 }
-/* line 202, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 .prehead {
   height: 10%;
   display: inline-block;
@@ -9360,23 +9391,23 @@ body p, li {
   padding: 1%;
 }
 
-/* line 212, ../scss/app.scss */
+/* line 242, ../scss/app.scss */
 .about {
   display: block;
   padding: 4%;
 }
 
-/* line 218, ../scss/app.scss */
+/* line 248, ../scss/app.scss */
 .map {
   padding: 0 2%;
 }
 
-/* line 223, ../scss/app.scss */
+/* line 253, ../scss/app.scss */
 .map img {
   margin: 0 4%;
 }
 
-/* line 226, ../scss/app.scss */
+/* line 256, ../scss/app.scss */
 .head {
   height: 30%;
   background: url(../img/contactheader.jpg) no-repeat center;
@@ -9387,14 +9418,14 @@ body p, li {
   position: relative;
 }
 
-/* line 236, ../scss/app.scss */
+/* line 266, ../scss/app.scss */
 .bottomhead {
   position: absolute;
   display: inline-block;
   top: 80%;
 }
 
-/* line 242, ../scss/app.scss */
+/* line 272, ../scss/app.scss */
 #searchbar {
   clear: none;
   width: 100%;
@@ -9402,19 +9433,19 @@ body p, li {
   box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 248, ../scss/app.scss */
+/* line 278, ../scss/app.scss */
 .side {
   height: 30%;
   display: block;
   margin: 0%;
 }
 
-/* line 256, ../scss/app.scss */
+/* line 286, ../scss/app.scss */
 .snav {
   margin: 4% 0;
 }
 
-/* line 261, ../scss/app.scss */
+/* line 291, ../scss/app.scss */
 .snav li {
   list-style: none;
   display: block;
@@ -9424,7 +9455,7 @@ body p, li {
   margin-top: 10%;
 }
 
-/* line 270, ../scss/app.scss */
+/* line 300, ../scss/app.scss */
 .homeimage {
   float: left;
   height: 30%;
@@ -9436,7 +9467,7 @@ body p, li {
   position: relative;
 }
 
-/* line 281, ../scss/app.scss */
+/* line 311, ../scss/app.scss */
 .footer {
   display: block;
   max-height: 200px;
