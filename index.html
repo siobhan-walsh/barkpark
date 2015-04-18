@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>version2</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
@@ -18,11 +18,11 @@
     </div>
   <div class='icons'>
     	
-    	<img data-amenity= 'offleash' class='offleash' src='img/offleash.png' >
-        <img data-amenity= 'fenced' class='fenced' src='img/fenced.png' >
-        <img data-amenity= 'fountain' src='img/fountain.png'>
-    	<img data-amenity= 'trail' src='img/trail.png' >
-        <img data-amenity= 'swim' src='img/swim.png' >
+    	<img data-amenity = 'offleash' class='offleash' src='img/offleash.png' >
+        <img data-amenity = 'fenced' class='fenced' src='img/fenced.png' >
+        <img data-amenity = 'fountain' class= 'fountain' src='img/fountain.png'>
+    	<img data-amenity = 'trail' class= 'trail' src='img/trail.png' >
+        <img data-amenity = 'swim' class= 'swim' src='img/swim.png' >
     </div>
     <div class='thesearch'>
         <div class='iconspace'></div>
@@ -40,27 +40,38 @@ $(document).ready(function(){
     
    //http://api.jqueryui.com/draggable/#event-drag
    
-  var inbox = false;
-   var offleash = false;
+    var offleash = false;
    var fenced = false;
    var fountain = false;
    var trail = false;
    var swim = false;
+   
+   var amenities = [];
  
         
-
+console.log("amenities array", amenities)
     
-    $('#but').click(
+  var clickin = function(){
+      $('#but').click(
        
         function(){
             
+            for(var i = 0; i < amenities.length; i++){
+                
+                
+                    if(amenities[i] == true){
+                        console.log(amenities[i], "I'm TRUEEE");
+                    }
+                
+                
+            }
             
             
-            console.log("they clicked the search button");
+            console.log(amenities);
         }            
     );
     
-     
+    }  
 var aanimate = function(){
                 
                 $(ui.helper).animate({
@@ -71,17 +82,27 @@ var aanimate = function(){
                     
                   
                 });
-                console.log($(this));
+          
             }
 
 var search = function(){
     
     if(offleash == true){
         
-        $(".show").html('yes offleash park');
+        $(".show").append('yes offleash park');
         
-    } else if(offleash == false){
-      $(".show").html('no offleash park');
+    } else if(fenced == true){ 
+        
+        $(".show").append('yes its fenced');
+    } else if(fountain == true){
+        
+        $(".show").append('yes fountain');
+    } else if(trail == true){
+        
+        $(".show").append('yes trail');
+    } else if(swim == true){
+        
+        $(".show").append('yes swim');
     }
     
     
@@ -101,21 +122,10 @@ var search = function(){
         }
         
     });
-    
-   /* $('.fenced').draggable({
-        drag: function( event, ui ) {
-            ui.position.left = Math.min( 100, ui.position.left );
-        },
-        revert : function(event, ui) {
-        }
-        
-    });*/
-    
-    
-    $( ".thesearch" ).droppable({
+
+        $( ".thesearch" ).droppable({
         drop: function( event, ui ) {
-            
-            console.log("they put it in the search!:");
+           
              $(ui.helper).animate({
                     
                     "width":"40px",
@@ -125,19 +135,28 @@ var search = function(){
                   
                 });
             $(ui.draggable).addClass("inbox").detach().css({top: 0,left: 0}).appendTo('.iconspace');
-            console.log(ui.offset);
            
-            console.log(inbox);
+           thething =$(ui.draggable);
             
-            if($(ui.draggable).hasClass("offleash")){
-                console.log('telllmeee');
+            amenities.push(thething.data('amenity'));
+             console.log('amenitites added something', amenities);
+            
+          /*  if($(ui.draggable).hasClass("offleash")){
+
                offleash = true; 
-            } else{
-               offleash = false;
-            }
+            } else if ($(ui.draggable).hasClass("fenced")){
+                console.log('fence is true');
+               fenced = true; 
+            } else if($(ui.draggable).hasClass("fountain")){
+                fountain = true;
+            } else if($(ui.draggable).hasClass("trail")){
+                trail = true;
+            } else if($(ui.draggable).hasClass("swim")){
+                swim = true;
+            } */
             
             console.log('offleash?' + offleash);
-            search();
+          
             
         }, 
         
@@ -151,20 +170,28 @@ var search = function(){
                   
                 });
             $(ui.draggable).removeClass("inbox").detach().css({top: 0,left: 0}).appendTo('.icons');
-            console.log(ui.offset);
-            console.log("they put it out of bounds!!");
+
             inbox = false;
-            console.log(inbox);
             
-            if($(ui.draggable).hasClass("offleash")){
-                console.log('telllmeee');
-               offleash = false;
-            } else{
-               
-            }
+            thething =$(ui.draggable);
+            amenities.splice($.inArray(thething, amenities), 1);
             
-            console.log('offleash?' + offleash);
-            search();
+            console.log('array removed something', amenities);
+          /*  if($(ui.draggable).hasClass("offleash")){
+
+               offleash = false; 
+            } else if ($(ui.draggable).hasClass("fenced")){
+             
+               fenced = false; 
+            } else if($(ui.draggable).hasClass("fountain")){
+                fountain = false;
+            } else if($(ui.draggable).hasClass("trail")){
+                trail = false;
+            } else if($(ui.draggable).hasClass("swim")){
+                swim = false;
+            } 
+            */
+           
             
         }
         
@@ -175,7 +202,7 @@ var search = function(){
     }   
             
     dragging();  
-   
+   clickin();
             
     }         
 );	
