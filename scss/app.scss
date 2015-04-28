@@ -17,9 +17,21 @@
 
 */
 
+
 body p, li{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size:16pt;
+}
+
+.h-space{
+    
+    margin:0 6%;
+}
+
+.writeup {
+    
+    font-size:12pt;
+    padding:0 2%;
 }
 
 /* mobile stuff */
@@ -58,6 +70,69 @@ body p, li{
 }
 
 
+#submit, #reset {
+    
+    width:80px;
+    height:40px;
+    background-color:#5caa5e;
+    color:#ffffff;
+    border:none;
+    border-radius:4px;
+    margin:4px;
+}
+
+#submit:hover, #reset:hover {
+    
+    opacity:0.8;
+}
+
+.imgnav {
+    
+    padding:2%;
+    padding-left:10%;
+    
+}
+
+.imgnav img {
+    
+    margin:0  2%;
+    border-style:solid;
+    border-width:10px;
+    border-color:#CCCCCC;
+    opacity:0.8;
+    
+    
+}
+
+.imgnav img:hover {
+    
+    opacity:1;
+}
+
+.topimgnav {
+    margin:auto;
+}
+.topimgnav img {
+    margin:2%;
+    border-style:solid;
+    border-width:10px;
+    border-color:#CCCCCC;
+    opacity:0.6;
+    width:100px;
+    
+}
+
+.topimgnav img:hover{
+    
+    opacity:0.8;
+}
+.selectedimg {
+    opacity:1!important;
+}
+.capwrap{
+    
+    margin:4%;
+}
 
 
 .contactlink h2 {
@@ -79,6 +154,17 @@ body p, li{
 	padding-bottom:4%;	
 	
 }
+
+@media only screen and (min-width: 40.063em) { 
+
+     #mendrop, #sresults {
+         
+         display:none!important;
+         
+    }
+
+}
+
 
 @media only screen and (max-width: 40em) { 
     
@@ -136,6 +222,7 @@ body p, li{
        z-index:2; 
        width:100%;
        display: none;
+       box-shadow:5px #888888;
     }
     #sresults {
        position:absolute; 
@@ -210,9 +297,7 @@ body p, li{
                 
 	}
 	
-	.grey{
-		color:#737373;
-	}
+
 	.ilabel {
 		background-color:#ffffff;
 		color:#CCCCCC;
@@ -225,17 +310,26 @@ body p, li{
             line-height:2px;
         }
 }
-
+	.grey{
+		color:#737373;
+	}
 
 
 
 .prehead {
 	
-	height:10%;
+	height:25%;
 	display:inline-block;
 	
-	text-align:center;
+	
 	padding:1%;
+       
+	background: url(../img/dlogo.png) no-repeat center ; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position:relative;
 	
 }
 
@@ -254,7 +348,7 @@ body p, li{
 	margin: 0 4%;	
 }
 .head {
-	height:30%;
+	height:50%;
 	background: url(../img/contactheader.jpg) no-repeat center ; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -299,7 +393,7 @@ body p, li{
 
 .homeimage {
 	float:left;
-	height:30%;
+	height:400px;
 	background: url(../img/homeimage.jpg) no-repeat center ; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
