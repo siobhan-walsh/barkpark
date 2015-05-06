@@ -58,6 +58,14 @@ body p, li {
   background-color: #353333;
 }
 
+.moblogo{
+    
+    margin-bottom:6%;
+}
+.moblogo img {
+    
+    border-radius:6px;
+}
 
 #submit, #reset {
   width: 80px;
@@ -263,37 +271,7 @@ body p, li {
     font-size: 10pt;
   }
 
-  .mobaccord {
-    font-weight: bold;
-    font-size: 16pt;
-    padding: 4% 0;
-  }
 
-
-  .mobaccord ul {
-    margin: 0;
-    padding: 0;
-  }
-
-
-  .mobaccord li {
-    margin: 4% 0;
-    font-family: "Josefin Sans", sans-serif;
-  }
-
-
-  .collapsing {
-    color: #ffffff;
-    font-size: 18pt;
-    padding: 1%;
-  }
-
-
-  .mobaccord li a {
-    background-color: #000000;
-    font-size: 10pt;
-    font-family: 'Josefin Sans', sans-serif;
-  }
 
 
   .thumb {
