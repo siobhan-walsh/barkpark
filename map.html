@@ -47,13 +47,43 @@
                 "<i class='fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
-                "<br>4/5 paws "
+                "<br>3/5 paws "
       
        
                
-        var seylynn = "seylnn"
-        var harbourview = "harbourview"
-        var kingsmill = "kingsmill"
+        var seylynn = 
+                "<a href='seylynn.html'><img src='img/seylynn-thumb.jpg'>"+
+            	"<br>Seylynn Park</a> "+
+                "<br> Mountain Highway<br>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<br>3/5 paws "
+        
+        var harbourview = 
+                "<a href='harbourview.html'><img src='img/harbourview-thumb.jpg'>"+
+            	"<br>Harbourview Park</a> "+
+                "<br> Harbour Avenue<br>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<br>4/5 paws "
+        
+        var kingsmill = 
+                "<a href='kingsmill.html'><img src='img/kingsmill-thumb.jpg'>"+
+            	"<br>King's Mill Park</a> "+
+                "<br> Fell Avenue<br>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<br>4/5 paws "
+        
         console.log(navigator);
         
         
@@ -62,7 +92,7 @@
         var coords = [
             
         [49.319704, -122.992096, mccartney, "mc-mark"],
-        [49.311335, -123.034095, seylynn, "seylynn-mark"],
+        [49.311335, -123.034095, seylynn, "sl-mark"],
         [49.305414, -123.038095, harbourview, "hb-mark"],
         [49.313413, -123.098523, kingsmill, "km-mark"]
         // and additional coordinates, just add a new item
@@ -98,6 +128,7 @@
 		   
 		   $('#mc', top.document).click(function () {
 			   		
+                                        
 			   		var val = marker.get("id");
 		  			console.log(val);
 					
@@ -126,6 +157,36 @@
 						}
 					
 				});
+                    $('#km', top.document).click(function () {
+
+                            var val = marker.get("id");
+                            console.log(val);
+
+                            if(val == "km-mark"){
+
+
+                            marker.infoWindow.open(map, marker);
+                            console.log("hi map");
+                            } else {
+                                    marker.infoWindow.close(); 
+                                    }
+
+                    });
+                    $('#sl', top.document).click(function () {
+
+                            var val = marker.get("id");
+                            console.log(val);
+
+                            if(val == "sl-mark"){
+
+
+                            marker.infoWindow.open(map, marker);
+                            console.log("hi map");
+                            } else {
+                                    marker.infoWindow.close(); 
+                                    }
+
+                    });
            
        	google.maps.event.addListener(map, 'click', function() {
               

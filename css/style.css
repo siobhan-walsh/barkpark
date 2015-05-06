@@ -62,6 +62,7 @@ body p, li {
     
     margin-bottom:6%;
 }
+
 .moblogo img {
     
     border-radius:6px;
@@ -103,9 +104,7 @@ body p, li {
 }
 
 
-.topimgnav {
-  margin: auto;
-}
+
 
 .topimgnav img {
   margin: 2%;
@@ -116,9 +115,7 @@ body p, li {
   width: 100px;
 }
 
-.topimgnav img:hover {
-  opacity: 0.8;
-}
+
 
 
 .selectedimg {
@@ -151,161 +148,176 @@ body p, li {
   padding-bottom: 4%;
 }
 
-@media only screen and (min-width: 40.063em) {
+        @media only screen and (min-width: 40.063em) {
 
-  #mendrop, #sresults {
-    display: none !important;
-  }
-}
-@media only screen and (max-width: 40em) {
-	
-.topimgnav {
-  margin: auto;
-}
+          #mendrop, #sresults {
+            display: none !important;
+          }
+        }
+        @media only screen and (max-width: 40em) {
 
-.topimgnav img {
-  margin: 2%;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #CCCCCC;
-  opacity: 0.6;
-  width: 100px;
-}
+            .topimgnav {
+              margin: auto;
+            }
 
-.topimgnav img:hover {
-  opacity: 0.8;
-}
+            .topimgnav img {
+              margin: 2%;
+              border-style: solid;
+              border-width: 4px;
+              border-color: #CCCCCC;
+              opacity: 0.6;
+              width: 100px;
+            }
+
+           
 
 
-.selectedimg {
-  opacity: 1 !important;
-}
-
- 
-  h1 {
-    font-size: 18pt;
-  }
+            .selectedimg {
+              opacity: 1 !important;
+            }
 
 
-  h2 {
-    font-size: 16pt;
-  }
-
-  .half {
-    width: 50vw;
-    margin: 0;
-    float: left;
-    padding: 2%;
-  }
+              h1 {
+                font-size: 18pt;
+              }
 
 
-  .half img {
-    min-width: 100%;
-  }
+              h2 {
+                font-size: 16pt;
+              }
 
-  .amen {
-    width: 30vw;
-    margin: 0;
-    float: left;
-    padding: 2%;
-  }
-
-
-  .iconsp {
-    width: 70vw;
-    margin: 0;
-    float: left;
-  }
+              .half {
+                width: 50vw;
+                margin: 0;
+                float: left;
+                padding: 2%;
+              }
 
 
-  .iconsp p {
-    font-size: 8pt;
-  }
+              .half img {
+                min-width: 100%;
+              }
+
+              .amen {
+                width: 30vw;
+                margin: 0;
+                float: left;
+                padding: 2%;
+              }
 
 
-  .gallery {
-    width: 100%;
-    background-color: #ffccee;
-  }
-
-  
-  .gallery img {
-    width: 100%;
-  }
+              .iconsp {
+                width: 70vw;
+                margin: 0;
+                float: left;
+              }
 
 
-  #mendrop {
-    position: absolute;
-    top: 78px;
-    background-color: #C7FFA8;
-    z-index: 2;
-    width: 100%;
-    display: none;
-    box-shadow: 5px #888888;
-  }
+              .iconsp p {
+                font-size: 8pt;
+              }
 
 
-  #sresults {
-    position: absolute;
-    top: 78px;
-    background-color: #ffffff;
-    z-index: 1;
-    width: 100%;
-    height: 30vh;
-    display: none;
-  }
+              .gallery {
+                width: 100%;
+                background-color: #ffccee;
+              }
 
 
-  .citylist > li {
-    margin: 0;
-    font-weight: bold;
-    list-style-type: none;
-  }
+              .gallery img {
+                width: 100%;
+              }
 
 
-  .parklist {
-    list-style-type: none;
-  }
+              #mendrop {
+                position: absolute;
+                top: 78px;
+                background-color: #C7FFA8;
+                z-index: 2;
+                width: 100%;
+                display: none;
+                box-shadow: 5px #888888;
+              }
 
-  .about p {
-    font-size: 10pt;
-  }
+
+              #sresults {
+                position: absolute;
+                top: 78px;
+                background-color: #ffffff;
+                z-index: 1;
+                width: 100%;
+                height: 30vh;
+                display: none;
+              }
+
+
+              .citylist > li {
+                margin: 0;
+                font-weight: bold;
+                list-style-type: none;
+              }
+
+
+              .parklist {
+                list-style-type: none;
+              }
+
+              .about p {
+                font-size: 10pt;
+              }
 
 
 
 
-  .thumb {
-    padding: 2%;
-  }
+              .thumb {
+                padding: 2%;
+              }
 
 
-  .thumb img {
-    width: 80%;
-    margin-left: 4%;
-    margin-top: 4%;
-  }
+              .thumb img {
+                width: 80%;
+                margin-left: 4%;
+                margin-top: 4%;
+              }
 
 
-  .ilabel {
-    background-color: #ffffff;
-    color: #CCCCCC;
-    font-size: 12pt;
-  }
+              .ilabel {
+                background-color: #ffffff;
+                color: #CCCCCC;
+                font-size: 12pt;
+              }
 
 
-  .thumbinfo {
-    margin: 4% 0;
-    line-height: 2px;
-  }
-}
+              .thumbinfo {
+                margin: 4% 0;
+                line-height: 2px;
+              }
+        }
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+            .prehead {
+                 max-width:100%;
+            }
 
+        }
+        @media only screen and (min-width: 64.063em) { 
+        
+            .prehead {
+                 height: 60%;
+            }
+        
+            
+        
+        
+        
+        }
+        
 .grey {
   color: #737373;
 }
 
 
 .prehead {
-  height: 25%;
+  height: 40%;
   display: inline-block;
   padding: 1%;
   background: url(../img/dlogo.png) no-repeat center;
@@ -313,7 +325,7 @@ body p, li {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: relative;
+  
 }
 
 

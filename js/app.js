@@ -6,17 +6,42 @@ $(document).ready(
 
 	function(){
 		
+                var clicked = false;
+                
+            //for the mobile image navigation feedback
+            
+       
+                
+                $("#mc").click(
+                    function(){
+                        $("#mc img").css({"opacity":"1"});
+                        $(".imgclick img:not(#mc img)").css({"opacity":"0.6"});
+                    }
+                );
+        
+                $("#hb").click(
+                    function(){
+                        $("#hb img").css({"opacity":"1"});
+                        $(".imgclick img:not(#hb img)").css({"opacity":"0.6"});
+                    }
+                );
+                $("#km").click(
+                    function(){
+                        $("#km img").css({"opacity":"1"});
+                        $(".imgclick img:not(#km img)").css({"opacity":"0.6"});
+                    }
+                );
+                $("#sl").click(
+                    function(){
+                        $("#sl img").css({"opacity":"1"});
+                        $(".imgclick img:not(#sl img)").css({"opacity":"0.6"});
+                    }
+                );
+                
+         
 		
 		var clicked = false;
              
-			 
-			 
-			 
-	
-			 
-			 
-			 
-			 
 			 
 			   
             //for the search funtion
