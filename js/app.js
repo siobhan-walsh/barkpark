@@ -8,9 +8,19 @@ $(document).ready(
 		
 		
 		var clicked = false;
-               
+             
+			 
+			 
+			 
+	
+			 
+			 
+			 
+			 
+			 
+			   
             //for the search funtion
-                $(".search").keypress(function(e){
+                $("#search").keypress(function(e){
                     
                     var term = $(".search").val();
                     

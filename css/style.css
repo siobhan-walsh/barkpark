@@ -356,8 +356,18 @@ body p, li {
 }
 
 
-.head {
-  height: 50%;
+#head1 {
+  height: 400px;
+  background: url(../img/home-header.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+#head2 {
+  height: 400px;
   background: url(../img/contactheader.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

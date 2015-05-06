@@ -6,6 +6,9 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/app.css" />
     <base target="_parent" />
     <style>
       html, body, #map-canvas {
@@ -15,6 +18,7 @@
       }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/jquery.min.js"></script>
     <script>
         
         infoWindow = new google.maps.InfoWindow;
@@ -33,22 +37,23 @@
               mapOptions);
           
         
-        var mccartney =  "<div class='row'>"+
-                "<div class='thumb small-6 columns'>"+
+        var mccartney =  
+		
+		
             
-            	"<img src='img/mccartney-thumb.jpg'>"+
-           "</div>"+    
-            "<div class='thumbinfo small-6 left columns'>"+
-            	"<h5>McCartney Creek Park</h5>"+
-               " <h6 class='subheader'>Larkhall Crescent</h6>"+
+            	"<a href='mccartney.html'><img src='img/mccartney-thumb.jpg'>"+
+              
+          
+            	"<br>McCartney Creek Park</a> "+
+                "<br> Larkhall Crescent<br>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
-                "<p class='ilabel'>4/5 paws</p>"+
-            "</div>"+
-         " </div>"
+                "<br>4/5 paws "
+      
+       
                
         var seylynn = "seylnn"
         var harbourview = "harbourview"
@@ -60,10 +65,10 @@
 
         var coords = [
             
-        [49.319704, -122.992096, mccartney],
-        [49.311335, -123.034095, seylynn],
-        [49.305414, -123.038095, harbourview],
-        [49.313413, -123.098523, kingsmill]
+        [49.319704, -122.992096, mccartney, "mc-mark"],
+        [49.311335, -123.034095, seylynn, "seylynn-mark"],
+        [49.305414, -123.038095, harbourview, "hb-mark"],
+        [49.313413, -123.098523, kingsmill, "km-mark"]
         // and additional coordinates, just add a new item
         ];
         
@@ -77,10 +82,11 @@
             var marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
-                icon: 'img/paw.png'
+                icon: 'img/paw.png',
+				id: coord[3]
              });    
             
-        marker.infoWindow = new google.maps.InfoWindow({
+        	marker.infoWindow = new google.maps.InfoWindow({
                 content: coord[2]
             });
             
@@ -90,11 +96,44 @@
               
                     marker.infoWindow.open(map, marker);
                     
-           });   
+           });  
+		   
+		   
+		   
+		   $('#mc', top.document).click(function () {
+			   		
+			   		var val = marker.get("id");
+		  			console.log(val);
+					
+					if(val == "mc-mark"){
+					
+					
+					marker.infoWindow.open(map, marker);
+					console.log("hi map");
+					} else {
+						marker.infoWindow.close(); 
+						}
+					
+				});
+		    $('#hb', top.document).click(function () {
+			   		
+			   		var val = marker.get("id");
+		  			console.log(val);
+					
+					if(val == "hb-mark"){
+					
+					
+					marker.infoWindow.open(map, marker);
+					console.log("hi map");
+					} else {
+						marker.infoWindow.close(); 
+						}
+					
+				});
            
-       google.maps.event.addListener(map, 'click', function() {
+       	google.maps.event.addListener(map, 'click', function() {
               
-                   marker.infowindow.close(); 
+                   marker.infoWindow.close(); 
            });   
            
             
