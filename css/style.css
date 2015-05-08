@@ -13,6 +13,9 @@
 
 */
 
+
+/* ---------- GLOBAL STYLES ---------------*/
+
 body p, li {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16pt;
@@ -32,44 +35,7 @@ body p, li {
   padding: 0 2%;
 }
 
-/* mobile stuff */
 
-.bar li {
-  display: inline;
-  list-style-type: none;
-}
-
-
-.bar li i {
-  cursor: default;
-  color: #ffffff;
-  font-size: 36pt;
-}
-
-
-.bar li input {
-  height: 30px;
-  border-radius: 8px;
-  margin-top: 15%;
-  width: 100%;
-}
-
-
-.mobnav {
-  padding-bottom: 0;
-  text-align: center;
-  background-color: #353333;
-}
-
-.moblogo{
-    
-    margin-bottom:6%;
-}
-
-.moblogo img {
-    
-    border-radius:6px;
-}
 
 #submit, #reset {
   width: 80px;
@@ -94,12 +60,6 @@ body p, li {
   opacity: 1 !important;
 }
 
-
-.capwrap {
-  margin: 4%;
-}
-
-
 .contactlink h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 22pt;
@@ -107,13 +67,6 @@ body p, li {
   color: #ffffff;
 }
 
-
-.fullWidth {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: initial;
-}
 
 .mcmap {
 
@@ -128,37 +81,13 @@ body p, li {
 	  width:15%;
   
   }
-  
-  .thumb {
-	padding: 2%;
-  }
-
-
-  .thumb img {
-	width: 80%;
-	margin-left: 4%;
-	margin-top: 4%;
-  }
-
-
-  .ilabel {
-	background-color: #ffffff;
-	color: #CCCCCC;
-	font-size: 12pt;
-  }
-
-
-  .thumbinfo {
-	margin: 4% 0;
-	line-height: 2px;
-  }
-  
-              
+           
 .map-area {
   padding-bottom: 4%;
 }
 
 @media only screen and (min-width: 40.063em) {
+		
 		
 		  #mendrop {
 			display: none !important;
@@ -227,9 +156,54 @@ body p, li {
 		  width: 100px;
 		}
 
+		
   
 }
+
+
+/* ---------------- MOBILE STUFF ---------------------- */
+
+
         @media only screen and (max-width: 40em) {
+			
+
+			
+			.bar li {
+			  display: inline;
+			  list-style-type: none;
+			}
+			
+			
+			.bar li i {
+			  cursor: default;
+			  color: #ffffff;
+			  font-size: 36pt;
+			}
+			
+			
+			.bar li input {
+			  height: 30px;
+			  border-radius: 8px;
+			  margin-top: 15%;
+			  width: 100%;
+			}
+			
+			
+			.mobnav {
+			  padding-bottom: 0;
+			  text-align: center;
+			  background-color: #353333;
+			}
+			
+			.moblogo{
+				
+				margin-bottom:6%;
+			}
+			
+			.moblogo img {
+				
+				border-radius:6px;
+			}
 
             .topimgnav {
               margin: auto;
@@ -296,21 +270,13 @@ body p, li {
 				
 			}
 				
-              .gallery {
-                width: 100%;
-                background-color: #ffccee;
-              }
-
-
-              .gallery img {
-                width: 100%;
-              }
-
-              #mendrop a {
-                  
-                 
-                  
-              }
+			a {
+				color: #000000;
+				text-decoration: none;
+				line-height: 0;
+			}	
+				
+            
               #mendrop {
                   
                 padding-top:8px;

@@ -30,12 +30,12 @@
   <div id="mendrop" class="">
         <ul class=" citylist">
             <li>North Vancouver</li>
-            <ul class="parklist">
-                <li><a href="mccartney.html"> McCartney Park </a></li>
-                <li>Seylynn</li>
-                <li>King's Mill</li>
-                <li><a href="harbourview.html">Harbourview</a></li>
-            </ul>
+                <ul class="parklist">
+                    <li><a href="mccartney.html"> McCartney Park </a></li>
+                    <li>Seylynn</li>
+                    <li>King's Mill</li>
+                    <li><a href="harbourview.html">Harbourview</a></li>
+                </ul>
             <li>Burnaby</li> 
             <li>Vancouver</li>
             <li><a href="contact.html">Contact</a></li>
@@ -55,7 +55,7 @@
   <div class=" bottomhead large-offset-7 large-5 columns right">
         <div class="row">
                <div class="large-6 columns">
-               	 <input type="search" id="searchbar" results="5" placeholder="park name">
+               	 <input type="text" id="searchbar" placeholder="park name">
                 </div>
                 <div class=" contactlink large-4 columns">
                     <h2><a href= "contact.html"> contact</a></h2>
@@ -79,9 +79,10 @@
 
 
 
-<div id="webinfo">
+<div id="webinfo" class="about">
 <div class="large-9 large-offset-1 medium-10 small-12 column">
-    
+ 
+ <!-----desktop image navigation ----->   
     <div class="topimgnav hide-for-small">
         <ul class="imgnav">
             <li>
@@ -114,9 +115,44 @@
             
     </div>
     
+<!----- mobile img nav ------>
+
+<div class="show-for-small topimgnav ">
+
+    <ul class="imgclick small-block-grid-4">
+    
+            <li>
+    
+                    <img src="img/mcnav.jpg" class="selectedimg" alt="McCartney Park">
+                    <p>McCartney</p>
+              
+            </li>
+            <li> 
+                <a href="harbourview.html">
+                    <img  src="img/harbourviewnav.jpg" alt="Harbourview">
+                    <p>Harbourview</p>
+                </a>
+            </li>
+            <li> 
+                <a href="kingsmill.html">
+                    <img src="img/kmnav.jpg" alt="King's Mill">
+                    <p>King's Mill</p>
+                </a>
+            
+            </li>
+            <li> 
+                <a href="kingsmill.html">
+                    <img src="img/seylynnnav.jpg" alt="Seylynn Park">
+                    <p>Seylynn</p>
+        
+                </a>
+            </li>
+    
+    </ul>
+</div>
 
    <div class="large-12 columns"> 
-    <div class="large-6 columns">
+    <div class="large-6 small-12 columns">
         <h1>McCartney Park - <small>Larkhall Cres.</small></h1>
         
         <i class='fi-paw'></i>
@@ -127,7 +163,7 @@
         <p>3/5 paws </p>
     </div>
     
-    <div class="large-6 small-6 right columns">
+    <div class="large-6 hide-for-small columns">
       <h2>Amenities:</h2>
         <div class='iconsp'>
             <img src="img/fountain.png" alt='fountain' >
@@ -142,6 +178,20 @@
 </div>
 
 <div class='mcmap large-6 left small-6 columns'><iframe frameborder='0' src="mc-map.html" width="80%"></iframe></div>  
+
+<div class="small-6 show-for-small columns">
+      <h2>Amenities:</h2>
+        <div class='iconsp'>
+            <img src="img/fountain.png" alt='fountain' >
+            <img src="img/trail.png" alt='trail' >
+            <img src="img/fpark.png" alt='free parking' >
+            
+            
+        </div>  
+
+
+    </div>
+
 	
 <div class="small-12 writeup tbspace right large-6 columns">
     
@@ -158,7 +208,7 @@
 
 
 
-    <div class='gallery show-for-small small-12 columns'>
+    <div class='gallery large-12 small-12 columns'>
         <img src="img/mccartney-1.jpg" alt='fountain'>
     </div>
 
