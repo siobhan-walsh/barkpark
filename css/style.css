@@ -30,11 +30,29 @@ body p, li {
 	margin: 3% 0;	
 }
 
+
+.about {
+  display: block;
+  padding: 4%;
+  
+}
+
+
+input.search {
+  clear: none;
+  width: 100%;
+  border-radius: 8px;
+ 
+}
+
 .writeup {
   font-size: 12pt;
   padding: 0 2%;
 }
 
+.grey {
+  color: #737373;
+}
 
 
 #submit, #reset {
@@ -52,10 +70,6 @@ body p, li {
   opacity: 0.8;
 }
 
-
-
-
-
 .selectedimg {
   opacity: 1 !important;
 }
@@ -66,29 +80,100 @@ body p, li {
   font-weight: bold;
   color: #ffffff;
 }
-
-
-.mcmap {
-
-	height:400px;	
-}
-.mcmap iframe {
-	height:100%;	
-	
-}
-  .iconsp img{
-	  
-	  width:15%;
-  
-  }
            
 .map-area {
   padding-bottom: 4%;
 }
 
+.footer {
+  display: block;
+  max-height: 200px;
+  min-height: 100px;
+  text-align: center;
+  padding-top: 4%;
+}
+
+
+
+/* -------   DESKTOP ONLY --------- */
+
 @media only screen and (min-width: 40.063em) {
+	
+	/*headers*/
+		.prehead {
+		  height: 300px;
+		  display: inline-block;
+		  padding: 1%;
+		  background: url(../img/dlogo.png) no-repeat center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  
+		}
+		
+		#head1 {
+		  height: 400px;
+		  background: url(../img/home-header.jpg) no-repeat center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  position: relative;
+		}
+		
+		#head2 {
+		  height: 400px;
+		  background: url(../img/contactheader.jpg) no-repeat center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  position: relative;
+		}
 		
 		
+		.bottomhead {
+		  position: absolute;
+		  display: inline-block;
+		  top: 80%;
+		}
+
+/* sidebar */
+		.side {
+		  height: 30%;
+		  display: block;
+		  margin: 0%;
+		}
+		
+		
+
+		.snav {
+		  margin: 4% 0;
+		}
+		
+		
+		.snav li {
+		  list-style: none;
+		  display: block;
+		  background-color: #c7ffa8;
+		  padding: 2%;
+		  margin-bottom: 20%;
+		  margin-top: 10%;
+		}
+		
+/* content */		
+		.homeimage {
+		  float: left;
+		  height: 400px;
+		  background: url(../img/homeimage.jpg) no-repeat center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  position: relative;
+		}
+
 		  #mendrop {
 			display: none !important;
 		  }
@@ -104,6 +189,21 @@ body p, li {
 			
 		  }
 		  
+				  
+		.mcmap {
+		
+			height:400px;	
+		}
+		.mcmap iframe {
+			height:100%;	
+			
+		}
+		  .iconsp img{
+			  
+			  width:15%;
+		  
+		  }
+				  
 		.imgnav {
 			margin:0;
 			float:left;
@@ -344,133 +444,12 @@ body p, li {
                 line-height: 2px;
               }
         }
-        @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-            .prehead {
-                 max-width:100%;
-            }
-
-        }
-        @media only screen and (min-width: 64.063em) { 
-        
-            .prehead {
-                 height: 60%;
-            }
-        
-            
-        
-        
-        
-        }
-        
-.grey {
-  color: #737373;
-}
+     
 
 
-.prehead {
-  height: 40%;
-  display: inline-block;
-  padding: 1%;
-  background: url(../img/dlogo.png) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-}
 
 
-.about {
-  display: block;
-  padding: 4%;
-  
-}
 
 
-.map {
-  padding: 0 2%;
-}
 
 
-.map img {
-  margin: 0 4%;
-}
-
-
-#head1 {
-  height: 400px;
-  background: url(../img/home-header.jpg) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
-
-#head2 {
-  height: 400px;
-  background: url(../img/contactheader.jpg) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
-
-
-.bottomhead {
-  position: absolute;
-  display: inline-block;
-  top: 80%;
-}
-
-
-#searchbar {
-  clear: none;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.45);
-}
-
-
-.side {
-  height: 30%;
-  display: block;
-  margin: 0%;
-}
-
-
-.snav {
-  margin: 4% 0;
-}
-
-
-.snav li {
-  list-style: none;
-  display: block;
-  background-color: #c7ffa8;
-  padding: 2%;
-  margin-bottom: 20%;
-  margin-top: 10%;
-}
-
-
-.homeimage {
-  float: left;
-  height: 400px;
-  background: url(../img/homeimage.jpg) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
-
-
-.footer {
-  display: block;
-  max-height: 200px;
-  min-height: 100px;
-  text-align: center;
-  padding-top: 4%;
-}

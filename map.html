@@ -16,6 +16,16 @@
         margin: 0px;
         padding: 0px
       }
+	  
+	  .scrollFix {
+		line-height: 1.35;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	  
+	a {
+		color:#000000;	
+	}
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="js/jquery.min.js"></script>
@@ -31,7 +41,8 @@
             
           var mapOptions = {
             zoom: 10,
-            center: new google.maps.LatLng(49.248612, -123.001439)
+            center: new google.maps.LatLng(49.248612, -123.001439),
+			
           };
           map = new google.maps.Map(document.getElementById('map-canvas'),
               mapOptions);
@@ -39,52 +50,54 @@
         
         var mccartney =  
 		
-            	"<a href='mccartney.html'><img src='img/mccartney-thumb.jpg'>"+
-            	"<br>McCartney Creek Park</a> "+
-                "<br> Larkhall Crescent<br>"+
+				"<a href='mccartney.html'><strong>McCartney Creek Park</strong> "+
+                "<br> Larkhall Crescent</a><br>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
-                "<br>3/5 paws "
+                "&nbsp; 3/5 paws <br>" +
+            	"<img src='img/fountain.png' width='40px'><img src='img/trail.png' width='40px'><img src='img/fpark.png' width='40px'>" 
+            	 
       
        
                
         var seylynn = 
-                "<a href='seylynn.html'><img src='img/seylynn-thumb.jpg'>"+
-            	"<br>Seylynn Park</a> "+
-                "<br> Mountain Highway<br>"+
+				"<a href='seylynn.html'><strong>Seylynn Park</strong>"+
+                "<br> Mountain Highway</a><br>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
-                "<br>3/5 paws "
+                "&nbsp; 3/5 paws <br>"+
+		"<img src='img/offleash.png' width='40px'><img src='img/trail.png' width='40px'><img src='img/fpark.png' width='40px'>"
+            	
         
         var harbourview = 
-                "<a href='harbourview.html'><img src='img/harbourview-thumb.jpg'>"+
-            	"<br>Harbourview Park</a> "+
-                "<br> Harbour Avenue<br>"+
+                "<a href='harbourview.html'><strong>Harbourview</strong>"+
+            	
+                "<br> Harbour Avenue</a><br>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='grey fi-paw'></i>"+
-                "<br>4/5 paws "
+                "&nbsp; 4/5 paws <br> "+
+				"<img src='img/fountain.png' width='40px'><img src='img/trail.png' width='40px'><img src='img/fpark.png' width='40px'>"
         
         var kingsmill = 
-                "<a href='kingsmill.html'><img src='img/kingsmill-thumb.jpg'>"+
-            	"<br>King's Mill Park</a> "+
-                "<br> Fell Avenue<br>"+
+                "<a href='kingsmill.html'><strong>King's Mill Park</strong>"+
+                "<br> Fell Avenue</a> <br>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
                 "<i class='fi-paw'></i>"+
-                "<br>4/5 paws "
+                "&nbsp; 5/5 paws <br>"+
+				"<img src='img/offleash.png' width='40px'><img src='img/fenced.png' width='40px'><img src='img/fountain.png' width='40px'><img src='img/fpark.png' width='40px'>"
         
-        console.log(navigator);
         
         
         
@@ -113,7 +126,8 @@
              });    
             
         	marker.infoWindow = new google.maps.InfoWindow({
-                content: coord[2]
+                content: '<div class="scrollFix">'+coord[2]+'</div>',
+				minWidth: 400
             });
             
           
