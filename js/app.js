@@ -6,7 +6,7 @@ $(document).ready(
 
 	function(){
 		
-          
+          var clicked = false;
                 
             //for the mobile image navigation feedback
              

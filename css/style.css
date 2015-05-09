@@ -80,6 +80,24 @@ input.search {
   font-weight: bold;
   color: #ffffff;
 }
+
+.contact {
+    
+    margin-top:4%;
+    margin-left:2%;
+    width:30%;
+    background-color:#ffffff;
+    text-align:center;
+    font-size:18pt;
+    border-radius:4px;
+    padding:2px;
+    
+}
+
+.contact:hover{
+    
+    opacity:0.6;
+}
            
 .map-area {
   padding-bottom: 4%;
@@ -267,17 +285,22 @@ input.search {
         @media only screen and (max-width: 40em) {
 			
 
-			
+            ul.bar {
+                
+                margin:0rem;
+            }
 			.bar li {
 			  display: inline;
 			  list-style-type: none;
+                          padding:0;
+                          margin:0;
 			}
 			
 			
 			.bar li i {
 			  cursor: default;
 			  color: #ffffff;
-			  font-size: 36pt;
+			  font-size: 42pt;
 			}
 			
 			
@@ -443,6 +466,18 @@ input.search {
                 margin: 4% 0;
                 line-height: 2px;
               }
+              .banner {
+		  height:100px;
+		  display: inline-block;
+		  padding: 1%;
+		  background: url(../img/banner.png) no-repeat center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  
+		}
+		
         }
      
 
