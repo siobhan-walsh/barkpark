@@ -155,10 +155,10 @@ $(document).ready(
                         $("#webinfo").css("opacity", "0.4");
                         $(".sresults").show().html(
                             '<div class=" thumb small-6 large-4 columns">'+
-                                '<img src="img/seylynn-thumb.jpg">'+
+                                '<a href="seylynn.html"><img src="img/seylynn-thumb.jpg"></a>'+
                             '</div>'+
                             '<div class="thumbinfo small-6 left columns">'+
-                                '<h5>Seylynn Park</h5>'+
+                                '<a href="seylynn.html"><h5>Seylynn Park</h5></a>'+
                                 '<h6 class="subheader">Mountain Highway</h6>'+
                                 '<i class="fi-paw"></i>'+
                                 '<i class="fi-paw"></i>'+
@@ -168,10 +168,10 @@ $(document).ready(
                                 '<p class="ilabel">4/5 paws</p>'+
                             '</div>'+
                             '<div class=" thumb small-6 large-4 columns">'+
-                                '<img src="img/stanley-thumb.jpg">'+
+                                '<a href="stanleypark.html"><img src="img/stanley-thumb.jpg"></a>'+
                             '</div>'+
                             '<div class="thumbinfo small-6 left columns">'+
-                                '<h5>Stanley Park</h5>'+
+                                '<a href="stanleypark.html"><h5>Stanley Park</h5></a>'+
                                 '<h6 class="subheader">Lagoon Drive</h6>'+
                                 '<i class="fi-paw"></i>'+
                                 '<i class="fi-paw"></i>'+

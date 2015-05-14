@@ -198,12 +198,13 @@ input.search {
 		  }
 		  .sresults {
 			position: absolute;
-			top: 90%;
+			top: 70%;
 			left:56%;
+			height:400px;
 			background-color: #ffffff;
 			z-index: 1;
 			width: 40%;
-			display: none;
+			opacity:0;
 			box-shadow: 5px 5px 5px #888888;
 			
 		  }
