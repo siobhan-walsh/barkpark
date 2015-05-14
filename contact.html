@@ -13,14 +13,20 @@
   
   <body>
   
-<!---------mobile topbar --------------->
+
+<!-- mobile topbar  -->
 
 <div class="mobnav show-for-small small-12 columns">
     	<ul class="bar">
-            <li class="left small-1 columns"><a href='index.html'> <i class="fi-home"></i></a></li>
-            <li class="small-6 small-offset-2 columns"><input id='search' type="text"></li>
+            <li class="left small-3 columns">
+                <a href='index.html'> <img src="img/bp-white.png"></a>
+            </li>
+            <li class="small-6 columns">
+                <input  class='search' type="text">
+            </li>
             
-            <li id="men" class="right small-2 columns end"><i class="fi-list"></i>
+            <li id="men" class="right small-3 columns">
+                <i class="fi-list"></i>
                     
             </li>
         </ul>
@@ -29,36 +35,52 @@
 
   <div id="mendrop" class="">
         <ul class=" citylist">
-            <li>North Vancouver</li>
-            <ul class="parklist">
-                <li><a href="mccartney.html"> McCartney Park </a></li>
-                <li>Seylynn</li>
-                <li>King's Mill</li>
-                <li>Harbourview</li>
-            </ul>
-            <li>Burnaby</li> 
-            <li>Vancouver</li>
-            <li>Contact</li>
+            	
+                <li><a href="contact.html">Contact</a></li>
+                
+            	<li>North Vancouver:
+                	<ul>
+                        <li><a href="mccartney.html"> McCartney Park </a></li>
+                        <li><a href="seylynn.html">Seylynn</a></li>
+                        <li><a href="kingsmill.html">King's Mill</a></li>
+                        <li><a href="harbourview.html">Harbourview</a></li>
+                    </ul>            
+            	</li>
+                <li>Burnaby:
+                	<ul>
+                        <li><a href="warnerloat.html"> Warner Loat</a></li>
+                        <li><a href="robertburnaby.html">Robert Burnaby</a></li>
+                     </ul>            
+            	</li>
+                <li>Vancouver:
+                	<ul>
+                        <li><a href="queenelizabeth.html"> Queen Elizabeth</a></li>
+                        <li><a href="stanleypark.html">Stanley Park</a></li>
+                     </ul>            
+            	</li>
+            
         </ul>
-    </div>
-<div id='sresults'>
-    
+  </div>
+<div class='sresults'>
+   
 </div>
 
+<!-- /mobile topbar  -->
 
+<!-- Destkop header and nav -->
 <a href="index.html"><div class="hide-for-small large-12 columns prehead">
     	
     </div></a>
     
-  <div id="head2" class="hide-for-small large-12 columns ">
+  <div id="head2" class=" hide-for-small large-12 columns ">
 
   <div class=" bottomhead large-offset-7 large-5 columns right">
         <div class="row">
                <div class="large-6 columns">
-               	 <input type="search" id="searchbar" results="5" placeholder="park name">
+               	 <input type="text" class='search' placeholder="park name">
                 </div>
                 <div class=" contactlink large-4 columns">
-                    <h2><a href= "contact.html"> contact</a></h2>
+                    <h4 class="contact"><a href="contact.html">Contact us</a> </h4>
                 </div>
           </div>
     </div>
@@ -70,46 +92,62 @@
 
    	<div class="snav"> 
         <ul class="row collapse">
-            <li><a href="nvan.html">North Vancouver</a></li>
-            <li><a href="burnaby.html">Burnaby</a></li>
-            <li><a href="vancouver.html">Vancouver</a></li>
+            <a href="nvan.html"><li>North Vancouver</li></a>
+            <a href="burnaby.html"><li>Burnaby</li></a>
+            <a href="vancouver.html"><li>Vancouver</li></a>
         </ul>
     </div>
   </div>
+<!-- /Destkop header and nav -->
 
 <div id="webinfo">
 <div class="about large-10 medium-10 small-12 column  right">
 
     <p>Feel free to send us an email with any questions or concerns. We will be happy to hear from you!</p>
     
-    <form>
-        <label for='fname'>Name:</label>
-        <input id='fname' type='text' placeholder='first name'>
-        <input id='lastname' type='text' placeholder='last name'>
-        <input id='email' type='email' placeholder='example@example.com'>
-        <label for='message'>Message:</label>
-        <textarea id='message'></textarea>
-        
-        <input id='submit' type='submit' value='Submit'>
-        <input id='reset' type='reset' value="Clear All">
-    
-    </form>
-
-
+    <div class="large-10 columns">
+        <form>
+            <label for='fname'>Name:</label>
+            <input id='fname' type='text' placeholder='first name'>
+            <input id='lastname' type='text' placeholder='last name'>
+            <input id='email' type='email' placeholder='example@example.com'>
+            <label for='message'>Message:</label>
+            <textarea id='message'></textarea>
             
-  
+            <input id='submit' type='submit' value='Submit'>
+            <input id='reset' type='reset' value="Clear All">
+        
+        </form>
+	</div>
+	
+    <div class=" contactimage hide-for-small column large-12 medium-12">
+    
+    
+    </div>      
+      
+    <!-- desktop footer -->
+        <div class="footer large-12 columns hide-for-small">
+        
+            <h4 class="contact"><a href="contact.html">Contact us</a> </h4>
+            <div class="credit small-8 columns">
+            <p>All images used on BarkPark courtesy of <a href="#" target="_blank">Shelby Gregg</a> and <a href="http://www.siobhanwalsh.ca" target="_blank">Siobhan Walsh</a> ©2015</p>
+        </div>
+            
+        </div>
+    
+    </div>
+
+
+
+
 
 </div>
+<!-- mobile footer -->
+<div class="banner show-for-small small-12 columns ">
 
-
-
-
-
-<div class=" footer column large-12 medium-12">
-   
-    <p><a href="contact.html">contact</a></p>
-
-</div>
+    <div class="about large-12 small-10 columns">
+        <p>All images used on BarkPark courtesy of <a href="#" target="_blank">Shelby Gregg</a> and <a href="http://www.siobhanwalsh.ca" target="_blank">Siobhan Walsh</a> ©2015</p>
+    </div>
 </div>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 

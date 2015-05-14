@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>BarkPark</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
@@ -42,6 +42,7 @@
           var mapOptions = {
             zoom: 10,
             center: new google.maps.LatLng(49.248612, -123.001439),
+			 scrollwheel: false
 			
           };
           map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -98,6 +99,49 @@
                 "&nbsp; 5/5 paws <br>"+
 				"<img src='img/offleash.png' width='40px'><img src='img/fenced.png' width='40px'><img src='img/fountain.png' width='40px'><img src='img/fpark.png' width='40px'>"
         
+         var robertburnaby = 
+                "<a href='robertburnaby.html'><strong>Robert Burnaby</strong>"+
+                "<br> Wedgewood Street</a> <br>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "&nbsp; 3/5 paws <br>"+
+				"<img src='img/offleash.png' width='40px'><img src='img/trail.png' width='40px'><img src='img/fpark.png' width='40px'>"
+				
+		var warnerloat = 
+                "<a href='warnerloat.html'><strong>Warner Loat</strong>"+
+                "<br> Winston Street</a> <br>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "&nbsp; 5/5 paws <br>"+
+				"<img src='img/offleash.png' width='40px'><img src='img/fenced.png' width='40px'><img src='img/fountain.png' width='40px'><img src='img/fpark.png' width='40px'>"
+				
+		var queenelizabeth = 
+                "<a href='queenelizabeth.html'><strong>Queen Elizabeth</strong>"+
+                "<br> Cambie Street</a> <br>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "&nbsp; 3/5 paws <br>"+
+				"<img src='img/offleash.png' width='40px'><img src='img/fpark.png' width='40px'>"
+        
+		var stanleypark = 
+                "<a href='stanleypark.html'><strong>Stanley Park</strong>"+
+                "<br> Lagoon Drive</a> <br>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "<i class='grey fi-paw'></i>"+
+                "&nbsp; 2/5 paws <br>"+
+				"<img src='img/offleash.png' width='40px'><img src='img/trail.png' width='40px'><img src='img/fpark.png' width='40px'>"
         
         
         
@@ -107,7 +151,11 @@
 			[49.319704, -122.992096, mccartney, "mc-mark"],
 			[49.311335, -123.034095, seylynn, "sl-mark"],
 			[49.305414, -123.038095, harbourview, "hb-mark"],
-			[49.313413, -123.098523, kingsmill, "km-mark"]
+			[49.313413, -123.098523, kingsmill, "km-mark"],
+			[49.234048, -122.933654, robertburnaby, "rb-mark"],
+			[49.247871, -122.934890, warnerloat, "wl-mark"],
+			[49.241448, -123.111062, queenelizabeth, "qe-mark"],
+			[49.292859, -123.146039, stanleypark, "st-mark"]
 			// and additional coordinates, just add a new item
         ];
         
@@ -201,8 +249,69 @@
                                     }
 
                     });
+					 $('#rb', top.document).click(function () {
+
+                            var val = marker.get("id");
+                            console.log(val);
+
+                            if(val == "rb-mark"){
+
+
+                            marker.infoWindow.open(map, marker);
+                            console.log("hi map");
+                            } else {
+                                    marker.infoWindow.close(); 
+                                    }
+
+                    });
+					 $('#wl', top.document).click(function () {
+
+                            var val = marker.get("id");
+                            console.log(val);
+
+                            if(val == "wl-mark"){
+
+
+                            marker.infoWindow.open(map, marker);
+                            
+                            } else {
+                                    marker.infoWindow.close(); 
+                                    }
+
+                    });
+					$('#qe', top.document).click(function () {
+
+                            var val = marker.get("id");
+                            console.log(val);
+
+                            if(val == "qe-mark"){
+
+
+                            marker.infoWindow.open(map, marker);
+                            
+                            } else {
+                                    marker.infoWindow.close(); 
+                                    }
+
+                    });
+					
+					$('#st', top.document).click(function () {
+
+                            var val = marker.get("id");
+                            console.log(val);
+
+                            if(val == "st-mark"){
+
+
+                            marker.infoWindow.open(map, marker);
+                            
+                            } else {
+                                    marker.infoWindow.close(); 
+                                    }
+
+                    });
            
-       	google.maps.event.addListener(map, 'click', function() {
+       		google.maps.event.addListener(map, 'click', function() {
               
                    marker.infoWindow.close(); 
            });   

@@ -47,7 +47,7 @@ input.search {
 
 .writeup {
   font-size: 12pt;
-  padding: 0 2%;
+  padding: 0%;
 }
 
 .grey {
@@ -81,23 +81,6 @@ input.search {
   color: #ffffff;
 }
 
-.contact {
-    
-    margin-top:4%;
-    margin-left:2%;
-    width:30%;
-    background-color:#ffffff;
-    text-align:center;
-    font-size:18pt;
-    border-radius:4px;
-    padding:2px;
-    
-}
-
-.contact:hover{
-    
-    opacity:0.6;
-}
            
 .map-area {
   padding-bottom: 4%;
@@ -116,6 +99,8 @@ input.search {
 /* -------   DESKTOP ONLY --------- */
 
 @media only screen and (min-width: 40.063em) {
+	
+
 	
 	/*headers*/
 		.prehead {
@@ -174,10 +159,14 @@ input.search {
 		.snav li {
 		  list-style: none;
 		  display: block;
-		  background-color: #c7ffa8;
+		  background-color: #353333;
 		  padding: 2%;
 		  margin-bottom: 20%;
 		  margin-top: 10%;
+		}
+		
+		.snav li a {
+		
 		}
 		
 /* content */		
@@ -191,7 +180,19 @@ input.search {
 		  background-size: cover;
 		  position: relative;
 		}
-
+		
+		
+		.contactimage {
+		  float: left;
+		  margin-top:4%;
+		  height: 400px;
+		  background: url(../img/contactimage.jpg) no-repeat center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  position: relative;
+		}
 		  #mendrop {
 			display: none !important;
 		  }
@@ -257,6 +258,7 @@ input.search {
 			
 		}
 		
+		
 		.imgnav figure {
 			margin-left:0px;	
 	
@@ -273,8 +275,41 @@ input.search {
 		  opacity: 0.6;
 		  width: 100px;
 		}
-
 		
+		.gallery img {
+				
+			margin:2%;
+			padding-right:4%;    
+		 }
+		
+
+		.contact {
+		
+		margin-top:0%;
+		margin-left:2%;
+		width:70%;
+		background-color:#ffffff;
+		text-align:center;
+		font-size:18pt;
+		border-radius:4px;
+		padding:2px;
+		opacity:0.9;
+		
+		}
+		
+		.contact:hover{
+		
+		opacity:0.8;
+		}
+		
+		.credit p{
+		
+		margin:2%;
+		font-size:10pt;
+		padding:2px;
+		
+	}
+
   
 }
 
@@ -292,8 +327,8 @@ input.search {
 			.bar li {
 			  display: inline;
 			  list-style-type: none;
-                          padding:0;
-                          margin:0;
+              padding:0;
+              margin:0;
 			}
 			
 			
@@ -328,9 +363,7 @@ input.search {
 				border-radius:6px;
 			}
 
-            .topimgnav {
-              margin: auto;
-            }
+            
 
             .topimgnav img {
               margin: 2%;
@@ -342,8 +375,15 @@ input.search {
             }
 
            
+			.topimgnav li {
+				margin:0;	
+				padding-bottom:0;
+			}
 
-
+			.imgclick li a{
+			color:#000000;	
+			}
+		
             .selectedimg {
               opacity: 1 !important;
             }
@@ -404,15 +444,22 @@ input.search {
                   
                 padding-top:8px;
                 position: absolute;
-                top: 76px;
-                background-color: #3A743D;
+                top: 80px;
+                background-color: #353333;
                 z-index: 2;
                 width: 100%;
                 display: none;
                 box-shadow: 5px 5px 5px #888888;
               }
-
-
+				#mendrop li {
+					text-decoration:none;
+					list-style-type:none;
+					color:#CDCACA;
+				}
+				li a {
+					color:#ffffff;
+				}
+				
               .sresults {
                 position: absolute;
                 top: 78px;
@@ -466,18 +513,53 @@ input.search {
                 margin: 4% 0;
                 line-height: 2px;
               }
+			  
+			  .gallery img {
+				
+					margin:2% 0;  
+				  
+			  }
+			  
               .banner {
-		  height:100px;
-		  display: inline-block;
-		  padding: 1%;
-		  background: url(../img/banner.png) no-repeat center;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
+				  height:100px;
+				  display: inline-block;
+				  padding: 1%;
+				  margin-top:1%;
+				  background: url(../img/banner.png) no-repeat center;
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
 		  
 		}
+	.contact {
+    
+		margin:0 2%;
+		width:30%;
+		background-color:#ffffff;
+		text-align:center;
+		font-size:14pt;
+		border-radius:4px;
+		padding:2px;
+    
+}
+
+.contact:hover{
+    
+    opacity:0.6;
+}
+	
+	.credit p{
 		
+		margin:2%;
+		font-size:10pt;
+		padding:2px;
+		
+	}
+	
+	.bigimg {
+		display:none;	
+	}
         }
      
 

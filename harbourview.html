@@ -6,21 +6,26 @@
     <title>Bark Park | Harbourview</title>
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/app.css" >
+    <link rel="stylesheet" href="css/style.css" >
     <script src="js/modernizr.js"></script>
   </head>
   
   <body>
   
-<!---------mobile topbar --------------->
+<!-- mobile topbar  -->
 
 <div class="mobnav show-for-small small-12 columns">
     	<ul class="bar">
-            <li class="left small-1 columns"><a href='index.html'> <i class="fi-home"></i></a></li>
-            <li class="small-6 small-offset-2 columns"><input id='search' type="text"></li>
+            <li class="left small-3 columns">
+                <a href='index.html'> <img src="img/bp-white.png"></a>
+            </li>
+            <li class="small-6 columns">
+                <input  class='search' type="text">
+            </li>
             
-            <li id="men" class="right small-2 columns end"><i class="fi-list"></i>
+            <li id="men" class="right small-3 columns">
+                <i class="fi-list"></i>
                     
             </li>
         </ul>
@@ -29,36 +34,52 @@
 
   <div id="mendrop" class="">
         <ul class=" citylist">
-            <li>North Vancouver</li>
-            <ul class="parklist">
-                <li><a href="mccartney.html"> McCartney Park </a></li>
-                <li>Seylynn</li>
-                <li>King's Mill</li>
-                <li><a href="harbourview.html">Harbourview</a></li>
-            </ul>
-            <li>Burnaby</li> 
-            <li>Vancouver</li>
-            <li>Contact</li>
+            	
+                <li><a href="contact.html">Contact</a></li>
+                
+            	<li>North Vancouver:
+                	<ul>
+                        <li><a href="mccartney.html"> McCartney Park </a></li>
+                        <li><a href="seylynn.html">Seylynn</a></li>
+                        <li><a href="kingsmill.html">King's Mill</a></li>
+                        <li><a href="harbourview.html">Harbourview</a></li>
+                    </ul>            
+            	</li>
+                <li>Burnaby:
+                	<ul>
+                        <li><a href="warnerloat.html"> Warner Loat</a></li>
+                        <li><a href="robertburnaby.html">Robert Burnaby</a></li>
+                     </ul>            
+            	</li>
+                <li>Vancouver:
+                	<ul>
+                        <li><a href="queenelizabeth.html"> Queen Elizabeth</a></li>
+                        <li><a href="stanleypark.html">Stanley Park</a></li>
+                     </ul>            
+            	</li>
+            
         </ul>
-    </div>
-<div id='sresults'>
-    
+  </div>
+<div class='sresults'>
+   
 </div>
 
+<!-- /mobile topbar  -->
 
+<!-- Destkop header and nav -->
 <a href="index.html"><div class="hide-for-small large-12 columns prehead">
     	
     </div></a>
     
-  <div class="hide-for-small large-12 columns head">
+  <div id="head1" class=" hide-for-small large-12 columns ">
 
   <div class=" bottomhead large-offset-7 large-5 columns right">
         <div class="row">
                <div class="large-6 columns">
-               	 <input type="search" id="searchbar" results="5" placeholder="park name">
+               	 <input type="text" class='search' placeholder="park name">
                 </div>
                 <div class=" contactlink large-4 columns">
-                    <h2><a href= "contact.html"> contact</a></h2>
+                    <h4 class="contact"><a href="contact.html">Contact us</a> </h4>
                 </div>
           </div>
     </div>
@@ -70,103 +91,138 @@
 
    	<div class="snav"> 
         <ul class="row collapse">
-            <li><a href="nvan.html">North Vancouver</a></li>
-            <li><a href="burnaby.html">Burnaby</a></li>
-            <li><a href="vancouver.html">Vancouver</a></li>
+            <a href="nvan.html"><li>North Vancouver</li></a>
+            <a href="burnaby.html"><li>Burnaby</li></a>
+            <a href="vancouver.html"><li>Vancouver</li></a>
         </ul>
     </div>
   </div>
+<!-- /Destkop header and nav -->
 
 
-
+<!-- Content Section-->
 <div id="webinfo">
-<div class="about large-10 medium-10 small-11 column  right">
-    
-<div class="topimgnav hide-for-small row">
-    <ul class="small-block-grid-4">
-        <li>
-           <a href="mccartney.html" <figure>
-                <img  src="img/mcnav.jpg" alt="McCarney Park">
-                <figcaption>McCartney</figcaption>
-            </figure></a>
-        </li>
-        <li> 
-          <a href="harbourview.html">  <figure>
-                <img class="selectedimg" src="img/harbourviewnav.jpg" alt="Harbourview">
-                <figcaption>Harbourview</figcaption>
-            </figure></a>
-        </li>
-        <li> 
-            <figure>
-                <img src="img/kmnav.jpg" alt="King's Mill">
-                <figcaption>King's Mill</figcaption>
-            </figure>
-        
-        </li>
-        <li> 
-            <figure>
-                <img   src="img/seylynnnav.jpg" alt="Seylynn Park">
-                <figcaption>Seylynn</figcaption>
-            </figure>
-        
-        </li>
-</ul>
-        
-</div>
-    
-    
-    
-    
-    
-    
-    
-    
-<div class="h-space large-11 right small-12 columns">
-    
-    <h1>Harbourview</h1>
-    
-    
-    <div class='large-6 small-12 columns'><iframe frameborder='0' src="mc-map.html" width="94%" height="350px"></iframe></div>  
-
-
-<div class="small-12 writeup large-6 columns">
-    <div class="amenities small-12 columns">
-        <div class='amen'><h2>Amenities:</h2></div>
-        <div class='iconsp'>
-            <img src="img/fountain.png" alt='fountain' width='40px'>
-            <img src="img/trail.png" alt='trail' width='40px'>
-            
-        </div>  
-
-
-    </div>
-
-        
+<div class="about large-10 medium-10 small-12 column right">
+    <div class="about right column large-5 medium-5 small-12">
             <p>
-                McCartney Creek Park is located in the Blueridge area of North Vancouver and is
-    a very popular dog hangout. It has two fields, trails, tennis courts and a creek. Dog owners 
-    often take their dogs through the trails and play fetch on the fields. The main drawback is 
-    that the main field is available for dogs during baseball season, however there is another field
-    that dogs can go to.
+                Bark Park is detailed review of the best dog parks in the Burnaby, North Vancouver, and Vancouver 			area.
+    
             </p>
-</div>
-
-
-
-    <div class='gallery show-for-small small-12 columns'>
-        <img src="img/mccartney-1.jpg" alt='fountain'>
+    </div> 
+    
+    
+  
+    <div class="show-for-small topimgnav ">
+    
+        <ul class="imgclick small-block-grid-4">
+        
+                <li id="mc">
+        
+                        <img src="img/mcnav.jpg" alt="McCartney Park"></a>
+                        <p>McCartney</p>
+                  
+                </li>
+                <li id="hb"> 
+              
+                        <img  src="img/harbourviewnav.jpg" alt="Harbourview">
+                        <p>Harbourview</p>
+                 
+                </li>
+                <li id="km"> 
+                 
+                        <img src="img/kmnav.jpg" alt="King's Mill">
+                        <p>King's Mill</p>
+                
+                
+                </li>
+                <li id="sl"> 
+                
+                        <img src="img/seylynnnav.jpg" alt="Seylynn Park">
+                        <p>Seylynn</p>
+            
+                
+                </li>
+        
+        </ul>
+        
+        <ul class="imgclick small-block-grid-4">
+        
+                <li id="rb">
+        
+                        <img src="img/rbnav.jpg" alt="Robert Burnaby"></a>
+                        <p>Robert Burnaby</p>
+                  
+                </li>
+                <li id="wl"> 
+              
+                        <img  src="img/wlnav.jpg" alt="Warner Loat">
+                        <p>Warner Loat</p>
+                 
+                </li>
+                <li id="qe"> 
+                 
+                        <img src="img/qenav.jpg" alt="Queen Elizabeth">
+                        <p>Queen Elizabeth Park</p>
+                
+                
+                </li>
+                <li id="st"> 
+                
+                        <img src="img/stnav.jpg" alt="Stanley Park">
+                        <p>Stanley Park</p>
+            
+                
+                </li>
+        
+        </ul>
+    
+    
     </div>
+        
+      <!--  <div class="moblogo show-for-small small-4 columns">
+            <img src="img/bp-logo.png">
+        </div>-->
+        
+    
+    
+    
+    <div class="map-area large-7 medium-7 small-12 columns">
+        
+      <iframe width="100%" height="300px" frameborder='0' src="map.html"></iframe>  
+    
+    
+    
+    </div>
+    
+    <div class=" homeimage hide-for-small column large-12 medium-12">
+    
+    
+    </div>
+    
+    <!-- desktop footer -->
+    <div class="footer large-12 columns hide-for-small">
+    
+        <a href="contact.html"><h4 class="contact">Contact us</h4></a> 
+        <div class="credit small-8 columns">
+        <p>All images used on BarkPark courtesy of <a href="#" target="_blank">Shelby Gregg</a> and <a href="http://www.siobhanwalsh.ca" target="_blank">Siobhan Walsh</a> ©2015</p>
+    </div>
+        
+    </div>
+    
+    
 </div>
 
-<div class=" footer column large-12 medium-12">
-   
-    <p><a href="contact.html">contact</a></p>
+<!-- mobile footer -->
+<div class="banner show-for-small small-12 columns">
+    <h4 class="contact"><a href="contact.html">Contact us</a> </h4>
+        <div class="credit small-8 columns">
+        <p>All images used on BarkPark courtesy of <a href="#" target="_blank">Shelby Gregg</a> and <a href="http://www.siobhanwalsh.ca" target="_blank">Siobhan Walsh</a> ©2015</p>
+    </div>
 
-</div>
 </div>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
-    <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
   </body>

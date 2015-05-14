@@ -35,7 +35,30 @@ $(document).ready(
                         $(".imgclick img:not(#sl img)").css({"opacity":"0.6"});
                     }
                 );
-                
+                $("#rb").click(
+                    function(){
+                        $("#rb img").css({"opacity":"1"});
+                        $(".imgclick img:not(#rb img)").css({"opacity":"0.6"});
+                    }
+                );
+				$("#wl").click(
+                    function(){
+                        $("#wl img").css({"opacity":"1"});
+                        $(".imgclick img:not(#wl img)").css({"opacity":"0.6"});
+                    }
+                );
+				$("#qe").click(
+                    function(){
+                        $("#qe img").css({"opacity":"1"});
+                        $(".imgclick img:not(#qe img)").css({"opacity":"0.6"});
+                    }
+                );
+				$("#st").click(
+                    function(){
+                        $("#st img").css({"opacity":"1"});
+                        $(".imgclick img:not(#st img)").css({"opacity":"0.6"});
+                    }
+                );
          
 		
 		
@@ -85,12 +108,22 @@ $(document).ready(
                     }
                 );
                     
-            // for the accordian plus/minus
-            $("accordion").click(
-                function(){
-                    $("#plusmin").toggleClass('fi-plus fi-minus');
-                }
-            );
+					
+	
+	var imggal = function(){
+		
+		$(".gallery img").click(function(){
+			
+			
+			
+			
+			
+		}
+		);
+		
+		
+		
+	}
     
     var searching = function(){
                     var term = $(".search").val();
