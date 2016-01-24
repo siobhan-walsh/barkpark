@@ -53,27 +53,26 @@
         var seylynn = "seylnn"
         var harbourview = "harbourview"
         var kingsmill = "kingsmill"
-        console.log(navigator);
         
-        
-        
-
         var coords = [
             
         [49.319704, -122.992096, mccartney],
         [49.311335, -123.034095, seylynn],
         [49.305414, -123.038095, harbourview],
         [49.313413, -123.098523, kingsmill]
-        // and additional coordinates, just add a new item
+     
         ];
         
-        // iterate over your coords array
+        
     for (var i = 0; i < coords.length; i++) {
-        // create a closure for your latitude/longitude pair
+       
         (function(coord) {
-            // set the location...
+            // adding locations:
+            
             var latLng = new google.maps.LatLng(coord[0], coord[1]);
-            // ...and add the Marker to your map
+            
+            // adding markers
+            
             var marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
